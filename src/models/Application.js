@@ -22,6 +22,8 @@ const applicationSchema = new mongoose.Schema({
     remote: { type: String, enum: ['remote', 'hybrid', 'onsite'], default: 'onsite' },
     jobUrl: { type: String, trim: true },
     jobDescription: { type: String },
+    jdSummary: { type: String },
+
     appliedAt: { type: Date },
     lastContact: { type: Date },
     nextFollowUp: { type: Date },

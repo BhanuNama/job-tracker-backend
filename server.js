@@ -74,6 +74,7 @@ app.use('/api/dashboard', apiLimiter, require('./src/routes/dashboard'));
 app.use('/api/diary', apiLimiter, require('./src/routes/diary'));
 app.use('/api/documents', apiLimiter, require('./src/routes/documents'));
 app.use('/api/offers', apiLimiter, require('./src/routes/offers'));
+app.use('/api/ai', apiLimiter, require('./src/routes/ai'));
 
 // Health check
 app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date() }));
